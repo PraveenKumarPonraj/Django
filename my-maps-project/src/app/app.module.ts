@@ -4,15 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AgmCoreModule } from '@agm/core';
-import { CityComponent } from './city/city.component';
+import { LatLngComponent } from './lat-lng/lat-lng.component';
+import { CityRadiusComponent } from './city-radius/city-radius.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    CityComponent
+    LatLngComponent,
+    CityRadiusComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     AgmCoreModule.forRoot({
       apiKey:''
     })
