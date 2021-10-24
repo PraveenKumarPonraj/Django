@@ -1,29 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+
 @Component({
   selector: 'app-lat-lng',
   templateUrl: './lat-lng.component.html',
   styleUrls: ['./lat-lng.component.css']
 })
 export class LatLngComponent implements OnInit {
-  
   title = 'Latitude and Longitude';
-  checkoutForm = this.formBuilder.group({
-    lat :'',
-    lng :''
-  });
-  
+  lat = 13.041456;
+  lng = 80.252014 ;
 
-  constructor(
-    private formBuilder: FormBuilder
-  ) { }
+  constructor() { }
 
   ngOnInit(): void {
-  }
-
-
-  onSubmit(): void{
-    console.log(this.checkoutForm.value);
   }
 
 }

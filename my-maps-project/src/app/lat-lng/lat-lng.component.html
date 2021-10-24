@@ -1,24 +1,11 @@
 <h1>{{ title }}</h1>
-
-<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
-
+<form  [formGroup]="check">
   <div>
     <label for="lat">
       latitude
     </label>
-    <input id="lat" type="text" formControlName="lat">
+    <input id="lat" type="text" [(ngModel)]="lat" formControlName="lat">
   </div>
-
-  <div>
-    <label for="lng">
-      longitude
-    </label>
-    <input id="lng" type="text" formControlName="lng">
-  </div>
-
-  <!-- <button class="button" type="submit">sun</button> -->
-  
-
 </form>
 <agm-map [latitude]="lat" [longitude]="lng">
   <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
