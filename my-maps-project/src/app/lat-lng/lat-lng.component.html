@@ -1,12 +1,12 @@
 <h1>{{ title }}</h1>
-<form  [formGroup]="check">
+<!-- <form  [formGroup]="check">
   <div>
     <label for="lat">
       latitude
     </label>
     <input id="lat" type="text" [(ngModel)]="lat" formControlName="lat">
   </div>
-</form>
+</form> -->
 <agm-map [latitude]="lat" [longitude]="lng">
   <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
 </agm-map>

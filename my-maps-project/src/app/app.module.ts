@@ -18,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     FormsModule,
     AgmCoreModule.forRoot({
-      apiKey:''
+      apiKey: 'AIzaSyBu-t-fjLxQWF8E7IVzUAS9cwLjy1DNdUE',
+      libraries: ['places']
     })
   ],
   providers: [],
